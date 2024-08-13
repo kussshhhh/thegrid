@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #333;
+  color: white;
+}
+
+.start-selling-btn {
+  background-color: #ff69b4;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nav-item {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.component-grid {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.component-card {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.component-card:hover {
+  transform: translateY(-5px);
+}
+
+.component-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.component-name {
+  margin: 10px 0;
+}
+
+.component-description {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.component-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.component-price {
+  font-weight: bold;
+  color: #ff69b4;
+  margin-top: 10px;
+}
