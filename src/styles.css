@@ -63,26 +63,30 @@ body {
 
 .component-grid {
   margin-bottom: 40px;
+  padding: 0 20px; /* Add padding to the sides */
 }
 
 .section-title {
   font-size: 24px;
   margin-bottom: 20px;
+  text-align: center; /* Center the title */
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr); /* Change to two columns */
+  gap: 40px; /* Increase gap for more space between cards */
+  padding: 20px 0; /* Add vertical padding */
 }
 
 .component-card {
   background-color: #2a2a2a;
   border-radius: 10px;
-  padding: 15px;
+  padding: 20px; /* Increase padding for larger cards */
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
-
 .component-card:hover {
   transform: translateY(-5px);
 }
