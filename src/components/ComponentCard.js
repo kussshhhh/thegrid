@@ -6,8 +6,18 @@ function ComponentCard({ component }) {
   return (
     <div className='component-card'>
       <div className='component-preview'>
-        <ComponentToRender />
-      </div>
+          {component.websiteUrl?(
+            <iframe
+                src={component.websiteUrl}
+                title= '${component.name}'
+                width="100%"
+                height="200"
+                allowFullScreen
+            />
+          ):(
+            <ComponentToRender/>
+          )}
+       </div>
       <h3 className='component-name'>{component.name}</h3>
       <p className='component-description'>{component.description}</p>
       <div className='component-meta'>
