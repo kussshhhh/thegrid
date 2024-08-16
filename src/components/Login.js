@@ -10,7 +10,7 @@ function Login({onLogin}) {
     const handleSubmit = async (e) => {
         e.preventDefault() ;
         try {
-            const response = await fetch('https://localhost:3000/login', {
+            const response = await fetch('http://localhost:3000/login', {
                 method: 'POST' ,
                 headers: {'Content-Type': 'application/json'} ,
                 body: JSON.stringify({username, password}) ,
@@ -34,7 +34,7 @@ function Login({onLogin}) {
                 <input
                     type='text'
                     placeholder='Username'
-                    value={password}
+                    value={username}
                     onChange={(e) => setUsername(e.target.value)}
                 />
                 <input 

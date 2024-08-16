@@ -37,7 +37,7 @@ app.post('/register', async(req, res) =>{
     }
 }) ;
 
-app.post('/login', async(res, sync) => {
+app.post('/login', async(req, res) => {
     try {
         const { username, password } = req.body ;
         const user = await db.getUser(username) ;
