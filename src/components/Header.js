@@ -22,7 +22,7 @@ function Header({isLoggedIn, username, onLogout}) {
                 {isLoggedIn ? (
                     <>
                         <span>Welcome, {username}</span>
-                        <button onCl={onLogout} >Logout</button>
+                        <button onClick={onLogout} >Logout</button>
                     </>
                 ):( 
                     <>
