@@ -20,7 +20,7 @@ function ComponentGrid({ title = "React Component Showcase" }) {
   const fetchComponents = async () => {
     try {
       setIsLoading(true) ;
-      const response = await fetch('https://localhost:3000/components')
+      const response = await fetch('http://localhost:3000/components')
       if(response.ok) {
         const data = await response.json() ;
         setComponents(data) ;

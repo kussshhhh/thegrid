@@ -46,7 +46,7 @@ app.post('/login', async(req, res) => {
         const match = await bcrypt.compare(password, user.password) ;
         if(!match) return res.status(400).json({error: 'Invalid password'}) ;
         
-        const token = jwt.sign({id : user.id, username: user.username}, 'your_secret_key', {expires: '1h'}) ;
+        const token = jwt.sign({id : user.id, username: user.username}, 'your_secret_key', {expiresIn: '1h'}) ;
         
         res.json({token}) ;
     } catch (err) {
