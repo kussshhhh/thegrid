@@ -17,11 +17,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
+  margin-bottom: 20px;
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
+  color: #9370DB;
+
 }
 
 .search-bar {
@@ -31,17 +34,24 @@ body {
   border: none;
 }
 
-.auth-buttons button {
+.auth-buttons a, .auth-buttons button {
   margin-left: 10px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .login-btn {
-  background-color: #333;
-  color: white;
+  background-color: #9370DB;
+  color: black; /* Purple color to match the logo */
+}
+
+.signup-btn {
+  background-color: rgb(194, 99, 218);
+  color: #ffffff;
 }
 
 .start-selling-btn {
@@ -116,4 +126,78 @@ body {
   font-weight: bold;
   color: #ff69b4;
   margin-top: 10px;
+}
+
+
+/* login signup and upload page csss */
+
+
+/* Common styles for all forms */
+.login-form, .signup-form, .upload-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #2d2d2d;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-form h2, .signup-form h2, .upload-form h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.login-form input, .signup-form input, .upload-form input, .upload-form textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(147, 112, 219, 0.3);
+}
+
+.login-form button[type="submit"], .signup-form button[type="submit"], .upload-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button[type="submit"]:hover, .signup-form button[type="submit"]:hover, .upload-form button[type="submit"]:hover {
+  background-color: #9932cc;
+}
+
+/* Specific styles for signup form */
+.signup-button {
+  font-size: 16px;
+  padding: 12px;
+  border: 1px solid #8a2be2;
+  background-color: transparent;
+  color: #8a2be2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.signup-button:hover {
+  background-color: #8a2be2;
+  color: white;
+}
+
+/* Specific styles for upload form */
+.upload-form textarea {
+  min-height: 100px;
+  resize: vertical;
 }
